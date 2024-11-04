@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>La chiesa di San Giovanni in Monte</title>
+		<!--Favicon-->
+		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+		<!-- I metadati-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sito dedicato alla chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="keywords" content="dipinti, sculture, fonti, fotografie" />
+		<meta name="author" content="Claudia Spadi" />
+		<!--Viewpoint per la visualizzazione su device diversi-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Foglio di stile-->
+		<link rel="stylesheet" href="stile/style.css" />
+		<!--Google Fonts-->
+		<link href='https://fonts.googleapis.com/css?family=STIX Two Text' rel='stylesheet' />
+		<!-- Libreria FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- Metadati DC -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!--I metadati in DC-->
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+		<link rel="schema.DCterms" href="http://purl.org/dc/terms/" />
+		<meta name="DC.Title" content="Sul Monte Oliveto: la chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="DC.Creator" content="Claudia Spadi" />
+		<meta name="DC.Subject" content="Dipinti, fotografie, stampe, incisioni, disegni, fonti" />
+		<meta name="DC.Description" content="Raccolta di risorse relative al patrimonio artistico, fotografico e librario della chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="DC.Publisher" content="Università di Bologna" />
+		<meta name="DC.Date" content="settembre 2024" />
+		<meta name="DC.Type" content="Sito web" />
+		<meta name="DC.Format" content="HTML/CSS/JS" />
+		<meta name="DC.Identifier" content="tbd" />
+		<meta name="DC.Source" content="Ricerca eseguita per l'università" />
+		<meta name="DC.Language" content="ita" />
+		<meta name="DC.Coverage" content="Bologna 2024" />
+	</head>
+	<body>
+		<!--Header contiene navbar-->
+		<header>
+			<nav class="navbar">
+				<div id="icona"><img src="img/Panfili_stampa.jpg" alt="Immagine della chiesa utilizzata come icona" /></div>
+				<a href="index.html">Home</a>
+				<a href="#">Progetto</a>	
+				<!--Dropdown in navbar-->
+				<div class="dropdown" >
+					<button class="dropbtn">Catalogo
+						<!--Freccetta (si collega al link FontAwesome)-->
+	  					<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+	      				<a href="catalogo.html"><u>Lista</u></a>
+	      				<a href="#">Tipologia</a>
+	      				<a href="#">Persona</a>
+	      				<a href="#">Data</a>
+		   			</div>
+				</div>
+				<a href="#">Itinerari</a>
+				<!--Search bar-->
+				<input type="text" placeholder="Search..." />
+				<!--Bottone Cerca-->
+				<button class="button">Cerca</button>
+			</nav>
+		</header>
+		<!--Section contiene: breadcrumbs, titolo, slideshow -->
+		<section>
+			<ul class="breadcrumb">
+	  			<li><a href="index.html">Home</a></li>
+	  			<li><a href="catalogo.html">Lista</a></li>
+	  			<li>Girolamo Pennacchi, Noli me tangere</li>
+			</ul>
+			<div class="work-title">
+				<h2>Noli me tangere, Girolamo Pennacchi (Girolamo da Treviso)</h2>
+			</div>
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				    <div class="numbertext">1 / 4</div>
+				    <img src="img/NoliMeTangere.jpg" alt="Dipinto Noli me tangere di Girolamo da Treviso" />
+				  </div>
+				  
+				  <div class="mySlides fade">
+				    <div class="numbertext">2 / 4</div>
+				    <img src="img/NoliMeTangere1.jpg" alt="Dipinto Noli me tangere di Girolamo da Treviso" />
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">3 / 4</div>
+				    <img src="img/NoliMeTangere2.jpg" alt="Dipinto Noli me tangere di Girolamo da Treviso" />
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">4 / 4</div>
+				    <img src="img/NoliMeTangere3.jpg" alt="Dipinto Noli me tangere di Girolamo da Treviso" />
+				  </div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br />
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+		</section>
+		<section>
+	 		<!--Tre colonne (due colonne + aside) -->
+			<div class="column-container">
+				<!--Left column (Bottoni + Tag)-->
+				<div class="left-column">
+			    	<!--Bottoni laterali-->
+					<button class="btn"><i class="fa fa-download"></i><span>Immagini</span></button>				
+			        <button class="dc-button" onclick="document.location='xml/xml-dc.xml'"><span>File XML/DC</span></button>
+			        <button class="tei-button" onclick="document.location='xml/xml-tei.xml'"><span>File XML/TEI</span></button>
+			        <button class="pdf-button"><span>Scheda in PDF</span></button>
+			        <button class="share-button"><span>Condividi</span></button>
+			        <!--Tag-->
+			        <div class="tag-container">
+			        	<h4>Tag:</h4>
+				        <span class="tag-cloud">Pale d'altare</span>
+						<span class="tag-cloud">Pittura</span>
+						<span class="tag-cloud">Cinquecento</span>
+			        </div>
+			    </div>
+	        	<!--Right column (Metadati)-->
+	        	<div class="right-column">
+			        <h3>Metadati e descrizione</h3>
+			        <!--Metadati DC-->        
+			        <table>
+						<tr> 				
+			        		<td><strong><span class="dc.title">Titolo:</span></strong><a href="http://id.loc.gov/authorities/subjects/sh2014002684" target="_blank"> Noli me tangere<sup>LCSH</sup></a></td>
+			    		</tr>
+			    		<tr>
+			    			<td><strong><span class="dc.creator">Creatore:</span></strong> <a href="http://viaf.org/viaf/95730747" target="_blank"> Girolamo Pennacchi (Girolamo da Treviso)<sup>VIAF</sup></a></td>
+			    		</tr>
+			    		<tr>
+			    			<td><strong><span class="dc.subject">Argomento:</span></strong> <a href="http://purl.org/bncf/tid/669" target="_blank">dipinti<sup>BNCF</sup></a></td>
+			    		</tr>    		
+			    		<tr>
+			    			<td><strong><span class="dc.type">Tipologia: </span></strong><a href="http://vocab.getty.edu/page/aat/300075940" target="_blank">pala d'altare<sup>AAT-Getty</sup></a></td>
+			    		</tr>
+			    		<tr>
+			    			<td><strong><span class="dcterms.created">Data di creazione:</span></strong> 1520-1525</td>
+			    		</tr>
+			    		<tr>
+			    			<td><strong><span class="dc.format">Tecnica:</span></strong><a href="https://www.wikidata.org/wiki/Q174705" target="_blank"> olio su tavola<sup>WikiData</sup></a></td>
+			    		</tr>
+			        	<tr>
+			    			<td><strong><span class="dcterms.extent">Dimensioni:</span></strong> 177 × 138 cm</td>
+			    		</tr>
+			        	<tr>
+			    			<td><strong><span class="dc.provenance">Ubicazione:</span></strong> chiesa di San Giovanni in Monte, Bologna</td>
+			    		</tr>
+			        	<tr>
+			        		<td><strong><span class="dc.description">Descrizione:</span></strong> Il Noli me tangere, cioè il commovente incontro tra Cristo risorto e la Maddalena, posto sull'altare della cappella di S. Maria Maddalena, la prima della navata destra, è opera giovanile (1519 ca.) di Girolamo Pennacchi, detto Girolamo da Treviso, da poco trasferitosi nella città di Bologna. Questo dipinto tradizionalmente attribuito a Giacomo Francia, è stato di recente aggiunto al catalogo di Girolamo. Caratteri nordici e veneti, propri della formazione di questo pittore, si possono infatti ritrovare nelle delicate cromie del paesaggio e nella descrizione naturalistica della vegetazione in primo piano.</td>
+			        	</tr>
+			        </table>
+			        <h4>Collegamenti esterni:</h4>
+			        <div class="collegamenti">
+			        	<ul>
+			        		<li><a href="https://it.wikipedia.org/wiki/Chiesa_di_San_Giovanni_in_Monte" target="_blank" class="link-esterno">Chiesa di San Giovanni in Monte - Wikipedia</a></li>
+			        		<li><a href="https://www.treccani.it/enciclopedia/girolamo-da-treviso-il-giovane_(Dizionario-Biografico)/?search=GIROLAMO%20da%20Treviso%2C%20il%20Giovane%2F" target="_blank" class="link-esterno">Girolamo da Treviso - Dizionario Biografico degli Italiani</a></li>
+			        	</ul>
+			        </div>
+	        	</div>
+		        <!--Aside column-->
+		        <aside class="aside-column">
+	        		<h4>Vedi anche:</h4>
+	        		<div class="card-aside">
+	  				<img src="img/Girolamo_da_Treviso.jpg" alt="Immagine che ritrae Girolamo da Treviso" />
+	  					<div class="aside-container">
+	    					<h4><b>Girolamo Pennacchi (Girolamo da Treviso)</b></h4>
+	    					<p>Pittore</p>
+	    					<button class="btn-aside"><span>Scopri di più</span></button>
+	  					</div>
+					</div>
+	        	</aside>
+	        </div>
+		</section>
+		<footer>
+			<div class="footer">	
+				<!--Due liste-->
+				<ul>
+					<li><h4>Alma Mater Studiorum Università di Bologna</h4></li>
+					<li><img src="img/unibo_marchio.png" alt="Marchio università di Bologna" style="width:100px; height:100px" /></li>
+					<li><p>&copy; Claudia Spadi 2023-2024 - Digital Humanities e Patrimonio culturale</p></li>
+				</ul>
+				<ul>
+					<li><a href="#">Progetto</a></li>
+					<li><a href="#">Contatti</a></li>
+					<li><a href="#">Credits</a></li>
+					<li><a href="#">Licenze</a></li>
+				</ul>
+				<!--Scroll to top button-->	
+					<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/Freccia.png" alt="freccia" /></button>
+			</div>
+		</footer>
+		<!--Link Javascript-->
+		<script src="script/script-topbutton.js"></script>
+		<script src="script/script-slideshow.js"></script>
+	</body>
+</html>

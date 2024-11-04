@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>La chiesa di San Giovanni in Monte</title>
+		<!--Favicon-->
+		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+		<!--I metadati in HTML-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sito dedicato alla chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="keywords" content="dipinti, fotografie, stampe, incisioni, disegni, fonti" />
+		<meta name="author" content="Claudia Spadi" />
+		<!--Viewpoint per la visualizzazione su device diversi-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Foglio di stile-->
+		<link rel="stylesheet" href="stile/style.css" />
+		<!--Google Fonts-->
+		<link href='https://fonts.googleapis.com/css?family=STIX Two Text' rel='stylesheet' />
+		<!-- Libreria FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!--I metadati in DC-->
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+		<meta name="DC.Title" content="Sul Monte Oliveto: la chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="DC.Creator" content="Claudia Spadi" />
+		<meta name="DC.Subject" content="Dipinti, fotografie, stampe, incisioni, disegni, fonti" />
+		<meta name="DC.Description" content="Raccolta di risorse relative al patrimonio artistico, fotografico e librario della chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="DC.Publisher" content="Università di Bologna" />
+		<meta name="DC.Date" content="settembre 2024" />
+		<meta name="DC.Type" content="Sito web" />
+		<meta name="DC.Format" content="HTML/CSS/JS" />
+		<meta name="DC.Identifier" content="tbd" />
+		<meta name="DC.Source" content="Ricerca eseguita per l'università" />
+		<meta name="DC.Language" content="ita" />
+		<meta name="DC.Coverage" content="Bologna 2024" />
+	</head>
+	<body>
+		<!--Header contiene navbar e parallax -->
+		<header>
+			<!--Navbar con dropdown-->
+			<nav class="navbar">
+				<div id="icona"><img src="img/Panfili_stampa.jpg" alt="Immagine della chiesa utilizzata come icona" /></div>
+				<a class="active" href="#">Home</a>
+				<a href="#">Progetto</a>
+				<!--Dropdown in navbar-->
+				<div class="dropdown">
+					<button class="dropbtn">Catalogo
+					<!--Freccetta (si collega al link FontAwesome)-->
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="catalogo.html"><u>Lista</u></a>
+		  				<a href="#">Tipologia</a>
+		  				<a href="#">Persona</a>
+		  				<a href="#">Data</a>
+		   			</div>
+		  		</div>
+				<a href="#">Itinerari</a>
+				<!--Search bar-->
+				<input type="text" placeholder="Search..." />
+				<!--Bottone Cerca-->
+				<button class="button">Cerca</button>
+			</nav>
+			<!-- Parallax-->
+			<div class="parallax">
+				<div class="text-block">
+		    		<h1>Sul Monte Oliveto: la chiesa di San Giovanni in Monte a Bologna</h1>	
+		  		</div>
+		  		<div class="text-block-bottom">
+		  			<p><em>Arnaldo Gentili, Chiesa di San Giovanni in Monte, da 'Bologna - dodici acquarelli', Provincia di Bologna(?), anni '20 del XX secolo. Collezione privata</em></p>
+		    		<p>&copy; Museo Risorgimento Bologna | Certosa</p>
+		  		</div>
+		  	</div>
+		</header>
+		<section>
+			<div class="progetto">
+			<h2>Il progetto</h2>
+				<p><strong>Sul Monte Oliveto: la chiesa di San Giovanni in Monte a Bologna</strong> è un progetto di catalogazione e metadatazione del patrimonio artistico, fotografico e librario presente in rete relativo alla storia della chiesa di San Giovanni in Monte a Bologna. Le finalità del catalogo sono la valorizzazione, preservazione e fruizione da parte degli utenti delle risorse disponibili.</p>
+			</div>	
+		</section>
+		<section>
+			<div class="tipologia">
+			<h2>Naviga per tipologia </h2>
+			<!-- 4 Images Overlay Fade-->
+				<div class="container">
+			  		<img src="img/documentazione.jpg" alt="Manoscritto medievale" class="image" />
+			  		<div class="overlay">
+			    		<div class="text">Fonti</div>
+			    		<!--Animated Button-->
+			    		<button class="button1"><span>Esplora</span></button>
+			  		</div>
+				</div>
+				<div class="container">
+			  		<img src="img/SantaCecilia.jpg" alt="Santa Cecilia di Raffaello" class="image" />
+			  		<div class="overlay">
+			    		<div class="text">Dipinti</div>
+			    		<!--Animated Button-->
+			    		<button class="button1"><span>Esplora</span></button>
+					</div>
+				</div>
+				<div class="container">
+			  		<img src="img/incisione.jpg" alt="Incisione del XVIII secolo" class="image" />
+			  		<div class="overlay">
+			    		<div class="text">Disegni Incisioni Stampe</div>
+			    		<!--Animated Button-->
+			    		<button class="button2"><span>Esplora</span></button>
+	    			</div>
+	    		</div>
+	    		<div class="container">
+	  				<img src="img/fotografia.jpg" alt="Fotografia che mostra l'interno della chiesa negli anni '80 del XIX secolo" class="image" />
+	  				<div class="overlay">
+	    				<div class="text">Fotografie</div>
+	    				<!--Animated Button-->
+			    		<button class="button1"><span>Esplora</span></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="persona">
+				<h2>Naviga per persona</h2>
+				<!--Avatar with orizontal scroll (Avatar + Image gallery with orizontal scroll)-->
+				<div class="scroll-container">
+	  				<a href="#" title="San Petronio"><img src="img/SanPetronio.jpg" alt="Immagine che ritrae San Petronio" class="avatar" /></a>
+					<a href="#" title="Raffaello Sanzio"><img src="img/Raffaello.jpg" alt="Ritratto di Raffaello Sanzio" class="avatar" /></a>
+					<a href="#" title="Fratelli Alinari"><img src="img/FratelliAlinari.jpg" alt="Fotografia dei fratelli Alinari" class="avatar" /></a>
+					<a href="#" title="Marcantonio Raimondi"><img src="img/MarcantonioRaimondi.jpg" alt="Immagine che ritrae Marcantonio Raimondi" class="avatar" /></a>
+					<a href="#" title="Pio Panfili"><img src="img/PioPanfili.jpg" alt="Immagine che ritrae Pio Panfili" class="avatar" /></a>
+					<a href="#" title="Girolamo da Treviso"><img src="img/Girolamo_da_Treviso.jpg" alt="Immagine che ritrae Girolamo da Treviso" class="avatar" /></a>
+					<a href="#" title="Alberto Bacchi Della Lega"><img src="img/BacchiDellaLega.jpg" alt="Fotografia di Alberto Bacchi Della Lega" class="avatar" /></a>
+					<a href="#" title="Pietro Poppi"><img src="img/PietroPoppi.jpg" alt="Fotografia di Pietro Poppi" class="avatar" /></a>
+				</div>
+			</div>
+		</section>
+		<section>
+		<div class="data">
+			<h2>Naviga per data</h2>
+			<div class="flex-container">
+				<!--Fading buttons-->
+				<button class="data-btn"><strong>XVI secolo</strong></button>
+				<button class="data-btn"><strong>XVIII secolo</strong></button>
+				<button class="data-btn"><strong>XIX secolo</strong></button>
+				<button class="data-btn"><strong>XX secolo</strong></button>
+			</div>
+		</div>
+		</section>
+		<section>
+			<div class="itinerari">
+				<h2>Itinerari</h2>
+				<!--Cards-->
+				<div class="card">
+	  				<a href="#"><img src="img/capitello_colonna_croce.jpg" alt="Immagine della croce e della colonna della chiesa delle origini" /></a>
+					<div class="text-container">
+	    				<h4><b>La chiesa delle origini</b></h4>
+	  				</div>
+				</div>
+				<div class="card">
+	  				<a href="#"><img src="img/bombardamento.jpg" alt="Immagine del bombardamento di Bologna durante la seconda guerra mondiale" /></a>
+					<div class="text-container">
+	    				<h4><b>Il bombardamento del 1944</b></h4>
+	  				</div>
+				</div>
+				<div class="card">
+	  				<a href="#"><img src="img/restauro_aquila.jpg" alt="Immagine del restauro dell'aquila di Niccolò dell'Arca" /></a>
+					<div class="text-container">
+	    				<h4><b>I restauri</b></h4>
+	  				</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">	
+				<!--Due liste-->
+				<ul>
+					<li><h4>Alma Mater Studiorum Università di Bologna</h4></li>
+					<li><img src="img/unibo_marchio.png" alt="Marchio università di Bologna" style="width:100px;height: 100px;" /></li>
+					<li><p>&copy; Claudia Spadi 2023-2024 - Digital Humanities e Patrimonio culturale</p></li>
+				</ul>
+				<ul>
+					<li><a href="#">Progetto</a></li>
+					<li><a href="#">Contatti</a></li>
+					<li><a href="#">Credits</a></li>
+					<li><a href="#">Licenze</a></li>
+				</ul>
+				<!--Scroll to top button-->	
+				<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/freccia.png" alt="Freccia" /></button>
+			</div>
+		</footer>
+		<!--Link Javascript-->
+		<script src="script/script-topbutton.js"></script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp:catalogo xmlns:mp="http://example.org/MyProject/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+    <dc:title xsi:type="dcterms:LCSH" mp:ref="http://id.loc.gov/authorities/subjects/sh2014002684">Noli me tangere</dc:title>
+    <dc:creator xsi:type="mp:VIAF" mp:ref="http://viaf.org/viaf/95730747">Girolamo Pennacchi (Girolamo da Treviso)</dc:creator>
+    <dc:subject xsi:type="dcterms:DDC">75</dc:subject>
+    <dc:type xsi:type="mp:AAT" mp:ref="http://vocab.getty.edu/page/aat/300075940">pala d'altare</dc:type>
+    <dcterms:created>1520-1525</dcterms:created>
+    <dc:format xsi:type="mp:WikiData" mp:ref="https://www.wikidata.org/wiki/Q174705">olio su tavola</dc:format>
+    <dcterms:extent>177 × 138 cm</dcterms:extent>
+    <dcterms:provenance> chiesa di San Giovanni in Monte, Bologna</dcterms:provenance>
+    <dc:description>Il Noli me tangere, cioè il commovente incontro tra Cristo risorto e la Maddalena, posto sull'altare della cappella di S. Maria Maddalena, la prima della navata destra, è opera giovanile (1519 ca.) di Girolamo Pennacchini, detto Girolamo da Treviso, da poco trasferitosi nella città di Bologna. Questo dipinto tradizionalmente attribuito a Giacomo Francia, è stato di recente aggiunto al catalogo di Girolamo. Caratteri nordici e veneti, propri della formazione di questo pittore, si possono infatti ritrovare nelle delicate cromie del paesaggio e nella descrizione naturalistica della vegetazione in primo piano.</dc:description>
+</mp:catalogo>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>La chiesa di San Giovanni in Monte</title>
+		<!--Favicon-->
+		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+		<!-- I metadati-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sito dedicato alla chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="keywords" content="dipinti, sculture, fonti, fotografie" />
+		<meta name="author" content="Claudia Spadi" />
+		<!--Viewpoint per la visualizzazione su device diversi-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Foglio di stile-->
+		<link rel="stylesheet" href="stile/style.css" />
+		<!--Google Fonts-->
+		<link href='https://fonts.googleapis.com/css?family=STIX Two Text' rel='stylesheet' />
+		<!-- Libreria FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- Metadati DC -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!--I metadati in DC-->
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+		<meta name="DC.Title" content="Sul Monte Oliveto: la chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="DC.Creator" content="Claudia Spadi" />
+		<meta name="DC.Subject" content="Dipinti, fotografie, stampe, incisioni, disegni, fonti" />
+		<meta name="DC.Description" content="Raccolta di risorse relative al patrimonio artistico, fotografico e librario della chiesa di San Giovanni in Monte a Bologna" />
+		<meta name="DC.Publisher" content="Università di Bologna" />
+		<meta name="DC.Date" content="settembre 2024" />
+		<meta name="DC.Type" content="Sito web" />
+		<meta name="DC.Format" content="HTML/CSS/JS" />
+		<meta name="DC.Identifier" content="tbd" />
+		<meta name="DC.Source" content="Ricerca eseguita per l'università" />
+		<meta name="DC.Language" content="ita" />
+		<meta name="DC.Coverage" content="Bologna 2024" />
+	</head>
+	<body>
+		<!--Header contiene navbar-->
+		<header>
+			<nav class="navbar">
+				<div id="icona"><img src="img/Panfili_stampa.jpg" alt="Immagine della chiesa utilizzata come icona" /></div>
+				<a href="index.html">Home</a>
+				<a href="#">Progetto</a>	
+				<!--Dropdown in navbar-->
+				<div class="dropdown">
+					<button class="dropbtn">Catalogo
+	  					<!--Freccetta (si collega al link FontAwesome)-->
+	  					<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+	      				<a href="catalogo.html"><u>Lista</u></a>
+	      				<a href="#">Tipologia</a>
+	      				<a href="#">Persona</a>
+	      				<a href="#">Data</a>
+		   			</div>
+			  	</div>
+				<a href="#">Itinerari</a>
+				<!--Search bar-->
+				<input type="text" placeholder="Search..." />
+				<!--Bottone Cerca-->
+				<button class="button">Cerca</button>
+			</nav>
+		</header>
+		<!-- Section include breadcrumbs, filter, image grid, pagination-->
+		<section>
+			<!--Breadcrumbs-->
+			<ul class="breadcrumb">
+	  			<li><a href="index.html">Home</a></li>
+	  			<li>Lista</li>
+			</ul>
+			<div class="lista">
+				<h2>Lista</h2>
+			</div>
+			<!-- Draggable filter (Tree view + draggable element)-->
+			<div id="mydiv">
+		  		<div id="mydivheader">Filtra per:</div>
+		  			<ul id="myUL">
+		  				<li><span class="caret">Tipologia</span>
+		    				<!--Conflitto nel foglio esterno css che porta a un fondo scuro non voluto-->
+		    				<ul class="nested" style="background-color:#f1f1f1;">
+		      					<li><a href="#">Fonti</a></li>
+		      					<li><a href="#">Dipinti</a></li>
+		      					<li><a href="#">Disegni</a></li>
+		      					<li><a href="#">Incisioni</a></li>
+		  						<li><a href="#">Stampe</a></li>	
+		      					<li><a href="#">Fotografie</a></li>
+		    				</ul>
+		  				</li>
+		  				<li><span class="caret">Persona</span>
+		  					<ul class="nested" style="background-color:#f1f1f1;">
+		  						<li><a href="#">San Petronio</a></li>
+		  						<li><a href="#">Raffaello</a></li>
+		  						<li><a href="#">Fratelli Alinari</a></li>
+		  						<li><a href="#">Marcantonio Raimondi</a></li>
+		  						<li><a href="#">Pio Panfili</a></li>
+		  						<li><a href="#">Girolamo da Treviso</a></li>
+		  						<li><a href="#">Alberto Bacchi della Lega</a></li>
+		  						<li><a href="#">Pietro Poppi</a></li>
+		  					</ul>
+		  				</li>
+		  				<li><span class="caret">Data</span>
+		  					<ul class="nested" style="background-color:#f1f1f1;">
+		  						<li><a href="#">1515-1516</a></li>
+		  						<li><a href="#">1518</a></li>
+		  						<li><a href="#">1520-1525</a></li>
+		  						<li><a href="#">1793</a></li>
+		  						<li><a href="#">1879</a></li>
+		  						<li><a href="#">1904</a></li>
+		  						<li><a href="#">1926</a></li>
+		  						<li><a href="#">1944</a></li>
+		  						<li><a href="#">1947</a></li>
+							</ul>
+						</li>
+						<!--provvisorio-->
+						<li><span class="caret">Supporto</span>
+		    				<ul class="nested" style="background-color:#f1f1f1;">
+		      					<li><a href="#">Immagini</a></li>
+		      					<li><a href="#">Testi</a></li>
+		    				</ul>
+		  				</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Responsive Image Grid-->
+			<div class="image-grid">
+				<div class="column">
+				    <a href="item.html"><img src="img/NoliMeTangere.jpg" alt="Dipinto del Noli me tangere di Girolamo da Treviso" /></a>
+				    <img src="img/SantaCecilia.jpg" alt="Santa Cecilia di Raffaello" />
+				</div>
+				<div class="column">
+				    <img src="img/facciata_Poppi.jpg" alt="Fotografia della facciata eseguita da Pietro Poppi" />
+				    <img src="img/VitaSanPetronio.jpg" alt="Edizione critica Vita di San Petronio" />
+				</div>
+				<div class="column">
+				    <img src="img/restauro_protiro.jpg" alt="Fotografia durante il restauro del protiro" />
+				    <img src="img/BacchiDellaLega_testo.jpg" alt="Monografia su San Giovanni in Monte di Alberto Bacchi della Lega" />
+				    <img src="img/Panfili_stampa.jpg" alt="Stampa di Pio Panfili" />
+				</div> 
+				<div class="column">
+				   <img src="img/Incisione_Raimondi.jpg" alt="Incisione di Marcantonio Raimondi della Santa Cecilia" />
+				   <img src="img/LorenzoCosta_Incoronazione.jpg" alt="Incoronazione della Vergine di Lorenzo Costa fotografata dai fratelli Alinari" />
+				</div>
+				<div class="column">
+					<img src="img/capitellocolonna.jpg" alt="Fotografia del capitello e della colonna delle origini" />
+		    		<img src="img/bombardamento_interni.jpg" alt="Immagine della chiesa dopo il bombardamento della seconda guerra mondiale" />
+		    		<img src="img/bombardamento_esterno.jpg" alt="Immagine dell'esterno della chiesa dopo il bombardamento della seconda guerra mondiale" />
+	    		</div>	  		
+			</div>
+			<div class="pagination">
+				<a href="#">&laquo;</a>
+				<a class="active" href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">&raquo;</a>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">	
+				<!--Due liste-->
+				<ul>
+					<li><h4>Alma Mater Studiorum Università di Bologna</h4></li>
+					<li><img src="img/unibo_marchio.png" alt="Marchio università di Bologna" style="width:100px;height: 100px;"></li>
+					<li><p>&copy; Claudia Spadi 2023-2024 - Digital Humanities e Patrimonio culturale</p></li>
+				</ul>
+				<ul>
+					<li><a href="#">Progetto</a></li>
+					<li><a href="#">Contatti</a></li>
+					<li><a href="#">Credits</a></li>
+					<li><a href="#">Licenze</a></li>
+				</ul>
+				<!--Scroll to top button-->	
+				<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/Freccia.png" alt="freccia" /></button>
+			</div>
+		</footer>
+		<!--Link Javascript-->
+		<script src="script/script-divdraggable.js"></script>
+		<script src="script/script-treeview.js"></script>
+		<script src="script/script-topbutton.js"></script>
+	</body>
+</html>
