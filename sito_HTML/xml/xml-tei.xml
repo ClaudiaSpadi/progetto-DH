@@ -53,15 +53,15 @@
 			<p xml:lang="ita">Il <title ref="http://id.loc.gov/authorities/subjects/sh2014002684">Noli me tangere</title>, cioè il commovente incontro tra <name ref="http://viaf.org/viaf/141145970137232251241" type="person">Cristo</name> risorto e la <name ref="http://viaf.org/viaf/221986199" type="person">Maddalena</name>, posto sull'altare della 
 			<name type="place">cappella di 
 			<choice>
-			<abbr>S.</abbr>
-			<expan>Santa</expan>
+			   <abbr>S.</abbr>
+			   <expan>Santa</expan>
 			</choice>
 			Maria Maddalena</name>, la <num type="ordinal" value="1">prima</num> della navata destra, è opera giovanile (
 			<date>
 			1519 
 			<choice>
-			<abbr>ca.</abbr>
-			<expan>circa</expan>
+			   <abbr>ca.</abbr>
+			   <expan>circa</expan>
 			</choice>
 			</date>) di <name ref="http://viaf.org/viaf/95730747" type="person">Girolamo Pennacchi</name>, detto <name ref="http://viaf.org/viaf/95730747" type="person">Girolamo da Treviso</name>, da poco trasferitosi nella città di <name ref=" http://viaf.org/viaf/312794095" type="place">Bologna</name>. Questo dipinto tradizionalmente attribuito a <name ref="http://viaf.org/viaf/24467329" type="person">Giacomo Francia</name>, è stato di recente aggiunto al catalogo di <name ref="http://viaf.org/viaf/95730747" type="person">Girolamo</name>. Caratteri nordici e veneti, propri della formazione di questo pittore, si possono infatti ritrovare nelle delicate cromie del paesaggio e nella descrizione naturalistica della vegetazione in primo piano <note type="bibliografica" place="foot">M. Delbianco, M. Poli, San Giovanni in Monte, Bologna, 1999</note>.</p>
 		</body>
