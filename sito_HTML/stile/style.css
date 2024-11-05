@@ -65,8 +65,8 @@ body{
   width: 100%; 
   height: auto; 
   padding: 20px; 
-  margin: 0 auto; /* Impostazione standard per il centramento */
-  box-sizing: border-box; /* Assicurati che il box-sizing includa padding e bordi */
+  margin: 0 auto; 
+  box-sizing: border-box; 
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -604,7 +604,7 @@ a {
 .column {
   flex: 20%; 
   padding: 5px; 
-  box-sizing: border-box; /* Include padding nel calcolo della larghezza */
+  box-sizing: border-box; 
 }
 
 /* Stile per le immagini */
