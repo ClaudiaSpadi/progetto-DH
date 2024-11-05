@@ -15,7 +15,7 @@
  		<profileDesc>
  			<classDecl>
  				<taxonomy xml:id="LCSH">
- 				<bibl>Library of Congress Subject Headings</bibl>	
+ 					<bibl>Library of Congress Subject Headings</bibl>	
  				</taxonomy>
  				<taxonomy xml:id="VIAF">
  					<bibl>Virtual International Authority File</bibl>
